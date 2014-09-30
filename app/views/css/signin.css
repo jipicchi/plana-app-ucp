@@ -1,0 +1,76 @@
+body {
+  padding-top: 290px;
+  padding-bottom: 290px;
+ }
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+}
+
+.form-signin .form-control 
+{
+  position: relative;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+  /* formulario transparente */
+  background: transparent;
+  border: none;
+
+}
+
+.form-signin input[type="email"] {
+  /* desaparece el borde del imput */
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+
+  /* el color del texto cuando escribe */
+  color: rgba(255,255,255,1);
+  margin-bottom: -1px;
+}
+
+.form-signin input[type="password"] 
+{
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  color: rgba(255,255,255,1);
+  margin-bottom: 10px;
+}
+
+/* el color de la referencia del olvidaste contraseña */
+<style type="text/css"> 
+  a:hover
+  a:link {color:white;}
+  a:visited {color:white;}
+  a:active {color:yellow;}
+</style> 
+
+.boton {
+  background-color:#44c767;
+  -moz-border-radius:29px;
+  -webkit-border-radius:29px;
+  border-radius:29px;
+  border:1px solid #256b2c;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:arial;
+  font-size:38px;
+  padding:11px 76px;
+  text-decoration:none;
+  text-shadow:0px -1px 0px #2f6627;
+}
+.boton:hover {
+  background-color:#5cbf2a;
+}
+.boton:active {
+  position:relative;
+  top:1px;
+}
+.imagen{
+  
+  padding-top:56.25%; /* Relación: 16/9 = 56.25% */
+  position:relative;
+}
+  
