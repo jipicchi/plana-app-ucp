@@ -5,18 +5,19 @@ body {
 
 .form-signin {
   max-width: 330px;
-  padding: 15px;
+  margin: 265px 85px;
 }
 
 .form-signin .form-control 
 {
-  position: relative;
+  
   height: auto;
   padding: 10px;
   font-size: 16px;
   /* formulario transparente */
   background: transparent;
   border: none;
+   
 
 }
 
@@ -28,6 +29,8 @@ body {
   /* el color del texto cuando escribe */
   color: rgba(255,255,255,1);
   margin-bottom: -1px;
+
+
 }
 
 .form-signin input[type="password"] 
@@ -69,8 +72,8 @@ body {
   top:1px;
 }
 .imagen{
-  
-  padding-top:56.25%; /* Relación: 16/9 = 56.25% */
-  position:relative;
+    margin: -245px 75px;
+   
+ 
 }
   
