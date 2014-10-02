@@ -1,8 +1,12 @@
-body {
+/*body {
   padding-top: 290px;
   padding-bottom: 290px;
  }
-
+*/
+.login-logo img{
+  width: 180px;
+  height: 180px;
+}
 .form-signin {
   max-width: 330px;
   margin: 265px 85px;
@@ -44,6 +48,7 @@ body {
 /* el color de la referencia del olvidaste contraseña */
 <style type="text/css"> 
   a:hover
+  a:padding: 2px 2px 5px #999;
   a:link {color:white;}
   a:visited {color:white;}
   a:active {color:yellow;}

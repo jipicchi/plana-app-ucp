@@ -6,15 +6,10 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
+var loginRoute = require('./routes/loginRoute');
 var users = require('./routes/users');
 
 var app = express();
-
-//agrego codigo desde una pagina
-app.get('/login', function(req, res) {
-  res.sendfile('views/login.html');
-});
-
 
 
 // view engine setup
@@ -31,7 +26,9 @@ app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
+app.use('/login', loginRoute);
 app.use('/users', users);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
