@@ -1,30 +1,27 @@
-var Lugar = (function(){
+var Lugar = (function(nombreInicial){
 	var self = Object.create({});
-
-var Contacto = function(nomLugar,listCont){
-     this.nomLugar = nomLugar;
-     this.listCont = listCont;
-     
-
-}
 
 
 	//Atributos y metodos Obcionales
-	var nomLugar;
-	self.getNomLugar=function (){
-		return nomLugar;
+	var nombre;
+	self.getNombre=function (){
+		return nombre;
 	}
-    self.setNomLugar=function (valor){
-		nomLugar=valor;
+    self.setNombre=function (valor){
+		nombre=valor;
 	}
 
-	var listCont;
-	self.getListCont=function (){
-		return listCont;
+	var contactos;
+	self.getContactos=function (){
+		return contactos;
 	}
-    self.setListCont=function (valor){
-		listCont=valor;
+    self.setContactos=function (valor){
+		contactos=valor;
 	}
 	
+	self.setNombre(nombreInicial);
+
+	return self;
 });
+
 module.exports = Lugar;
