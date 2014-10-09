@@ -6,10 +6,10 @@ var Eventos=(function(){
         self.listado=function(eve){
         
 
-        for (i=0;i<3;i++){
+        for (i=0;i<7;i++){
 		
 		  ent=new eve();
-           ent.setNombre=('Lista evento '+i);
+           ent.setNombreE=('Lista evento '+i);
 		   lista.push=(ent);
         }
              return lista;

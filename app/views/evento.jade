@@ -1,4 +1,9 @@
 extends layout
 
 block content
-    h1= evento
+    h1
+        li= evento
+    h2= "Listado de Eventos"
+    ul 
+      each e, i in eventos 
+         li= ent.getNombre()

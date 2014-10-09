@@ -1,14 +1,14 @@
-var Evento = (function(nombreInicialE){
+var Evento = (function(nombreInicial){
 	var self = Object.create({});
 
 
 	//Atributos y metodos Obcionales
-	var nombreE;
+	var nombre;
 	self.getNombre=function (){
-		return nombreE;
+		return nombre;
 	}
     self.setNombre=function (valor){
-		nombreE=valor;
+		nombre=valor;
 	}
 
 	var contactos;
@@ -19,7 +19,7 @@ var Evento = (function(nombreInicialE){
 		contactos=valor;
 	}
 	
-	self.setNombreE(nombreInicialE);
+	self.setNombre(nombreInicial);
 
 	return self;
 });
