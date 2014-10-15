@@ -2,19 +2,21 @@ extends layout
 
 block content
     div(class="login-logo")
-        img(src="/imagenes/login/logo.png")
- 
-    div
+      img(src="/imagenes/login/logo.png")
+    
+    .formulario
       form(action='/login',method='post')
+       
+       
        div#usuariodiv(data-role='fieldcontain')
-          fieldset(data-role='controlgroup')
-             label(for='usuario') usuario
-                input(id='usuario',type='text',value='',placeholder='',name='usuario')
-
+          fieldset(data-role='controlgroup')             
+                input(id='usuario',type='text', value='',placeholder='E-mail',name='usuario')
+       
        div#passworddiv(data-role='fieldcontain')
-           fieldset(data-role='controlgroup')
-              label(for='password') password
-                 input(id='password',type='password',value='',placeholder='',name='password')
+           fieldset(data-role='controlgroup')              
+                 input(id='password',type='password',value='',placeholder='Contraseña',name='password')
+            
+            <a href="/login"> ¿Olvidaste tu contraseña?
 
-       div(data-role='fieldcontain')   
-            input(type='submit',value='Ingresar')
+       div(data-role='fieldcontain') 
+          input.btn.btn-large.btn-primary(type='submit',value='Iniciar Sesión')
