@@ -1,4 +1,9 @@
 extends layout
 
 block content
-    h1= lugar
+    h1
+        li= lugar
+    h2= "Listado de Lugares"
+    ul 
+      each l, i in lugares 
+         li= l.getNombre()

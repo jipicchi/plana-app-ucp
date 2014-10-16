@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h1
+      li= lugar
+    h2= "Listado de Lugares"
+    form(action='',method='get')
+       input(id='q',type='text',value='#{query}',placeholder='',name='q')
+       input(type='submit',value='Buscar')
+
+    ul 
+      each l, i in lugares 
+         li= l.getNombre()
