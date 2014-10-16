@@ -15,4 +15,23 @@ router.get('/', function(req, res) {
 });
 
 
+//Buscar 
+router.get('/buscar', function(req, res) {
+	
+	var eventos = [];
+	var en = new EventoNegocio();
+
+
+	if (req.query.q!=null && req.query.q.length) {
+		eventos = en.buscar(req.query.q);
+	}else{
+		eventos = en.listado();
+	}
+
+  res.render('eventoBuscar', 
+  			{eventos:eventos,
+  			 query:req.query.q});
+});
+
+
 module.exports = router;

@@ -12,6 +12,7 @@ var lugarRoute = require('./routes/lugarRoute');
 var eventoRoute = require('./routes/eventoRoute');
 
 
+
 var app = express();
 
 
@@ -33,6 +34,8 @@ app.use('/login', loginRoute);
 app.use('/perfil', perfilRoute);
 app.use('/lugar', lugarRoute);
 app.use('/evento', eventoRoute);
+
+
 
 
 // catch 404 and forward to error handler

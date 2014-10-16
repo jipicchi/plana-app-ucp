@@ -2,20 +2,40 @@ var Evento = require('../entidades/evento.js');
 var EventoNegocio=(function(){
     var self=Object.create({});
 
-     
-      
+
         self.listado=function(){
           var lista=[];
-                 for (i=0;i<7;i++){
+                 for (i=0;i<100;i++){
 		
-		             ent=new Evento("Evento N° " + i);
+		             var ent=new Evento("Evento N° " + i);
                      //ent.setNombre("Evento N° "+ i);
 		             lista.push(ent);
-                    }
+                }
                      return lista;
-                 }
+        }
      
+self.buscar = function(palabras){
+    var entidadesFiltradas = [];
+    //Obtiene la lista de un metodo que devuelve todos los objetos sin filtrar
+    var lista = self.listado();
+    var e = null;
+    
+    for (var i = 0; i<lista.length; i++) {
+        e = lista[i];
+        if (e.getNombre().indexOf(palabras) > -1) {
+            entidadesFiltradas.push(e)
+        };
+    };
+
+    return entidadesFiltradas;
+        
+        }   
+
 
      return self;
 });
+
+
+
+
 module.exports=EventoNegocio;
