@@ -2,8 +2,12 @@ extends layout
 
 block content
     h1
-        li= evento
+      li= evento
     h2= "Listado de Eventos"
+    form(action='',method='get')
+       input(id='q',type='text',value='#{query}',placeholder='',name='q')
+       input(type='submit',value='Buscar')
+
     ul 
       each e, i in eventos 
          li= e.getNombre()
