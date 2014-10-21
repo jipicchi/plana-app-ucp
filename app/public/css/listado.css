@@ -1,0 +1,17 @@
+.container
+{
+	background: #6a95d9;
+	width: 376px;
+ 	height: 40px;
+}
+.listado-item
+{
+ margin: 7px;
+}
+ul.listado
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 180px;
+}
