@@ -8,11 +8,7 @@ var Contacto = function(nombre,apellido,numero){
 
 }
 
-
-
-
-
-	//Atributos y metodos Obcionales
+	//Atributos y metodos Opcionales
 	
 	var nombre;
 	self.getNombre=function(){
