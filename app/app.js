@@ -10,7 +10,7 @@ var loginRoute = require('./routes/loginRoute');
 var perfilRoute = require('./routes/perfilRoute');
 var lugarRoute = require('./routes/lugarRoute');
 var eventoRoute = require('./routes/eventoRoute');
-
+var menueventoRoute = require('./routes/menueventoRoute');
 
 
 var app = express();
@@ -34,6 +34,7 @@ app.use('/login', loginRoute);
 app.use('/perfil', perfilRoute);
 app.use('/lugar', lugarRoute);
 app.use('/evento', eventoRoute);
+app.use('/menuevento', menueventoRoute);
 
 
 

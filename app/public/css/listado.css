@@ -15,3 +15,107 @@ ul.listado
   padding: 0;
   width: 180px;
 }
+
+
+/*--------------------------------------.navbar-------------------------------------------------------------------*/
+.navbar-header
+{
+	background: #f7ab3b;
+	width: 315px;
+ 	height: 50px;
+}
+.IZQUIERDA-BARRA
+{
+float: left;	
+}
+
+.DERECHA-BARRA
+{
+float: right;	
+}
+button.btn.btn-default.btn-sm
+{
+	width: 40px;
+ 	height: 40px;
+	background: #f7ab3b;
+	border: none;
+	color: white;
+	
+}
+button.navbar-toggle.collapsed
+{
+
+	background: #f7ab3b;
+	border: none;
+	color: white;
+
+}
+
+
+/*-------------------------------------- menu botones -------------------------------------------------------------------*/
+
+.menuprincipal li{
+float:right;
+list-style-type:none;
+white-space:nowrap;
+margin-left:60px;
+margin-top:4px;
+}
+/*-------------izquierda----------------------------*/
+/*---- FIESTA----------------*/
+.menuprincipal div.fiesta {  
+width:98px;
+}
+.menuprincipal div.fiesta img {
+width:150px;
+}
+/*---- CITA----------------*/
+.menuprincipal div.cita {
+width:108px;
+}
+.menuprincipal div.cita img{
+width:150px;
+}
+/*---- amigos----------------*/
+.menuprincipal div.amigos {
+width:87px;
+}
+.menuprincipal div.amigos img{
+width:150px;
+}
+/*---- derecha------------------------------------*/
+/*---- CUMPLEAÑOS----------------*/
+.menuprincipal div.cumpleanos img{
+height:250px;	
+width:150px;
+}
+.menuprincipal div.cumpleanos {
+width:150px;
+}
+/*---- CONCIERTO----------------*/
+.menuprincipal div.concierto {	
+width:55px;
+}
+.menuprincipal div.concierto img {
+height:150px;
+width:150px;
+}
+
+/*----reunion----------------*/
+.menuprincipal div.reunion {		
+width:62px;
+}
+.menuprincipal div.reunion img{
+height:150px;
+width:150px;
+}
+/*----columnas----------------*/
+.derecho  {
+  width: 180px;
+  float: right;
+  }
+ 
+.izquierdo {
+  width: 150px;
+  float: left;
+  }

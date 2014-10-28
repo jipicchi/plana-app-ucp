@@ -1,0 +1,61 @@
+/*-------------------------------------- Buttons -------------------------------------------------------------------*/
+#buttons {
+padding:1em;
+height:1.5em;
+}
+#buttons ul {
+width: 500px;
+float: right;
+margin-right: 60px;
+}
+#buttons li {
+float:right;
+list-style-type:none;
+white-space:nowrap;
+margin-left:60px;
+margin-top:4px;
+}
+#buttons li a.fiesta {
+background: url('plan-a/fiesta.jpg') no-repeat; 
+background-position:center top; 
+display:block;
+height:28px;
+width:98px;
+}
+#buttons li a.cumpleaños {
+background: url('plan-a/cumplaños.jpg') no-repeat; 
+background-position:center top;
+display:block;
+height:28px;
+width:105px;
+}
+#buttons li a.cita {
+background: url('plan-a/cita.jpg') no-repeat; 
+background-position:center top;
+display:block;
+height:28px;
+width:108px;
+}
+#buttons li a.concierto {
+background: url('plan-a/concierto.jpg') no-repeat; 
+background-position:center top;
+display:block;
+height:28px;
+width:55px;
+}
+#buttons li a.amigos {
+background: url('plan-a/amigos.jpg') no-repeat; 
+background-position:center top;
+display:block;
+height:48px;
+width:87px;
+}
+#buttons li a.reunion {
+background: url('plan-a/reunion.jpg') no-repeat; 
+background-position:center top;
+display:block;
+height:28px;
+width:62px;
+}
+#buttons li a.activo { background-position: center bottom;}
+#buttons li a:hover { background-position: center;}
