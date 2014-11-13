@@ -2,11 +2,11 @@ var Evento = require('../entidades/evento.js');
 var EventoNegocio=(function(){
     var self=Object.create({});
 
-
         self.listado=function(){
           var lista=[];
+          var cn = null;
                  for (i=0;i<100;i++){
-		
+		            
 		             var ent=new Evento("Evento N° " + i);
                      //ent.setNombre("Evento N° "+ i);
 		             lista.push(ent);
@@ -35,7 +35,18 @@ self.buscar = function(palabras){
      return self;
 });
 
-
+//metodo
+    self.obtener=function(id){
+            
+        var c=new evento();
+         c.setNombre('Evento '+id);
+         
+         for (j=1;j<5;j++){
+           Contactos=new ();
+           cn.setNombre('Contactos '+j);
+           c.GetContactos().push(cn);
+          };
+        return c;
 
 
 module.exports=EventoNegocio;
