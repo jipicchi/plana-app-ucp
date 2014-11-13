@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h1
+      li= contacto
+    h2= "Listado de Contactos"
+    form(action='',method='get')
+       input(id='q',type='text',value='#{query}',placeholder='',name='q')
+       input(type='submit',value='Buscar')
+
+    ul 
+      each c, i in contactos 
+         li= c.getNombre()

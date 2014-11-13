@@ -22,7 +22,7 @@ self.buscar = function(palabras){
     
     for (var i = 0; i<lista.length; i++) {
         c = lista[i];
-        if (e.getNombre().indexOf(palabras) > -1) {
+        if (c.getNombre().indexOf(palabras) > -1) {
             entidadesFiltradas.push(c)
         };
     };
@@ -36,3 +36,4 @@ self.buscar = function(palabras){
 });
 
 
+module.exports=ContactoNegocio;

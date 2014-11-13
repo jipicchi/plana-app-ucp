@@ -1,20 +1,40 @@
 0 info it worked if it ends with ok
 1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
 1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'start' ]
-2 info using npm@1.4.23
-3 info using node@v0.10.31
+1 verbose cli   'install',
+1 verbose cli   '-g' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
 4 verbose node symlink C:\Program Files\nodejs\\node.exe
-5 error Error: ENOENT, open 'C:\Users\JL Soto\Documents\GitHub\plana-app-ucp\package.json'
-6 error If you need help, you may report this *entire* log,
-6 error including the npm and node versions, at:
-6 error     <http://github.com/npm/npm/issues>
-7 error System Windows_NT 6.1.7600
-8 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
-9 error cwd C:\Users\JL Soto\Documents\GitHub\plana-app-ucp
-10 error node -v v0.10.31
-11 error npm -v 1.4.23
-12 error path C:\Users\JL Soto\Documents\GitHub\plana-app-ucp\package.json
-13 error code ENOENT
-14 error errno 34
-15 verbose exit [ 34, true ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . C:\Users\invitado\AppData\Roaming\npm-cache\3a52ce78-.lock
+10 silly lockFile 3a52ce78- .
+11 silly lockFile 3a52ce78- .
+12 error addLocal Could not install .
+13 error Error: ENOENT, open 'C:\Users\invitado\Downloads\plana-app-ucp-master\package.json'
+14 error If you need help, you may report this *entire* log,
+14 error including the npm and node versions, at:
+14 error     <http://github.com/npm/npm/issues>
+15 error System Windows_NT 6.1.7600
+16 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g"
+17 error cwd C:\Users\invitado\Downloads\plana-app-ucp-master
+18 error node -v v0.10.32
+19 error npm -v 1.4.28
+20 error path C:\Users\invitado\Downloads\plana-app-ucp-master\package.json
+21 error code ENOENT
+22 error errno 34
+23 verbose exit [ 34, true ]

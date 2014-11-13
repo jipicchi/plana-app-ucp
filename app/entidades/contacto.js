@@ -1,4 +1,4 @@
-var Contacto = (function(){
+var Contacto = (function(nombreInicial){
 	var self = Object.create({});
 
 var Contacto = function(nombre,apellido,numero){
@@ -33,6 +33,9 @@ var Contacto = function(nombre,apellido,numero){
 	self.setNum=function(valor){
 	    numero=valor;
 	}
+
+	self.setNombre(nombreInicial);
+	
 	return self;
 });
 module.exports = Contacto;

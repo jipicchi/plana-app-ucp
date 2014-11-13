@@ -9,7 +9,7 @@ var ContactoNegocio = require('../negocio/ContactoNegocio');
 /* GET Login */
 router.get('/', function(req, res) {
 	var cn = new ContactoNegocio();
-	var contactos = en.listado();
+	var contactos = cn.listado();
 	res.render('contacto', {contactos:contactos});
 
 });
