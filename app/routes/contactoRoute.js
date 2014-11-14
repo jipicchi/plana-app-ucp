@@ -33,5 +33,17 @@ router.get('/buscar', function(req, res) {
   			 query:req.query.q});
 });
 
+/* Detalle */
+
+router.get('/detalle', function(req, res) {
+	var contacto=null;
+	if (req.query.id != null && req.query.id.length) {
+		var cn=new ContactoNegocio();
+		contacto=cn.obtener(req.query.id);
+	}
+	res.render('contactoDetalle', 
+  			{contacto:contacto});
+ 
+});
 
 module.exports = router;

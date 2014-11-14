@@ -38,15 +38,15 @@ self.buscar = function(palabras){
 //metodo
     self.obtener=function(id){
             
-        var c=new evento();
-         c.setNombre('Evento '+id);
+        var e=new evento();
+         e.setNombre('Evento '+id);
          
          for (j=1;j<5;j++){
-           Contactos=new ();
-           cn.setNombre('Contactos '+j);
-           c.GetContactos().push(cn);
+           Eventos=new ();
+           en.setNombre('Eventos '+j);
+           e.GetEventos().push(en);
           };
-        return c;
+        return e;
 
 
 module.exports=EventoNegocio;
