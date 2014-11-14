@@ -9,7 +9,7 @@ var ContactoNegocio = require('../negocio/ContactoNegocio');
 /* GET Login */
 router.get('/', function(req, res) {
 	var cn = new ContactoNegocio();
-	var contactos = cn.listado();
+	var contactos = en.listado();
 	res.render('contacto', {contactos:contactos});
 
 });
@@ -33,17 +33,18 @@ router.get('/buscar', function(req, res) {
   			 query:req.query.q});
 });
 
-/* Detalle */
-
 router.get('/detalle', function(req, res) {
-	var contacto=null;
-	if (req.query.id != null && req.query.id.length) {
-		var cn=new ContactoNegocio();
-		contacto=cn.obtener(req.query.id);
+	
+	var cn = new ContactoNegocio();
+	var contacto = null;
+
+	if (req.query.id!=null && req.query.id.length) {
+		contacto= cn.obtener(req.query.id);
 	}
-	res.render('contactoDetalle', 
+
+  res.render('contactoDetalle', 
   			{contacto:contacto});
- 
 });
+
 
 module.exports = router;

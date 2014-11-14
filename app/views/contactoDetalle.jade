@@ -1,8 +1,4 @@
 extends layout
+
 block content
-     
-    h1= "bar"
-  
-      each c, i in contactos.getContactos()
-         li 
-             span= c.getNombre()
+    h1=contacto.getNombre()

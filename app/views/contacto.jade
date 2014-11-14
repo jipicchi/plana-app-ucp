@@ -1,10 +1,9 @@
-extends layoutConMenu
+extends layout
+
 block content
-  div(class="titulo")   
-    h1= "bar"
-  ul(class="listado") 
+    h1
+        li= contacto
+    h2= "Listado de Contactos"
+    ul 
       each c, i in contactos 
-         li 
-             div(class="listado-item")
-                 img(src="http://lorempixel.com/350/200")
-                 span= c.getNombre()
+         li= c.getNombre()

@@ -9,6 +9,7 @@ var ContactoNegocio=(function(){
         
                      var ent=new Contacto("Contacto N° " + i);
                      //ent.setNombre("Evento N° "+ i);
+                     ent.setId(i);
                      lista.push(ent);
                 }
                      return lista;
@@ -32,8 +33,31 @@ self.buscar = function(palabras){
 }   
 
 
-    return self;
+
+self.obtener = function(id){
+    
+   
+    var lista = self.listado();
+    var c = null;
+    
+    for (var i = 0; i<lista.length; i++) {
+        c = lista[i];
+        if (c.getId() == id) {
+            return c;
+        };
+    };
+
+    return null;
+        
+        }   
+
+
+
+     return self;
 });
+
+
+
 
 
 module.exports=ContactoNegocio;

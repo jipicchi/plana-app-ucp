@@ -1,41 +1,35 @@
 var Contacto = (function(nombreInicial){
 	var self = Object.create({});
 
-var Contacto = function(nombre,apellido,numero){
-     this.nombre = nombre;
-     this.apellido = apellido;
-     this.numero = numero;
 
-}
-
-	//Atributos y metodos Opcionales
-	
+	//Atributos y metodos Obcionales
 	var nombre;
-	self.getNombre=function(){
-	    return nombre;
+	self.getNombre=function (){
+		return nombre;
 	}
-	self.setNombre=function(valor){
-	    nombre=valor;
-	}
-		
-	var apellido;
-	self.getApellido=function(){
-	    return apellido;
-	}
-	self.setApellido=function(valor){
-	    apellido=valor;
-	}
-	
-	var numero;
-	self.getNum=function(){
-	    return numero;
-	}
-	self.setNum=function(valor){
-	    numero=valor;
+    self.setNombre=function (valor){
+		nombre=valor;
 	}
 
-	self.setNombre(nombreInicial);
+	var contactos;
+	self.getContactos=function (){
+		return contactos;
+	}
+    self.setContactos=function (valor){
+		contactos=valor;
+	}
+
+	var id;
+	self.getId=function (){
+		return id;
+	}
+    self.setId=function (valor){
+		id=valor;
+	}
 	
+	self.setNombre(nombreInicial);
+
 	return self;
 });
+
 module.exports = Contacto;
