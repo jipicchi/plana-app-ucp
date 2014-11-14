@@ -33,17 +33,18 @@ router.get('/buscar', function(req, res) {
   			 query:req.query.q});
 });
 
-/* Detalle */
-
 router.get('/detalle', function(req, res) {
-	var evento=null;
-	if (req.query.id != null && req.query.id.length) {
-		var en=new EventoNegocio();
-		evento=en.obtener(req.query.id);
+	
+	var en = new EventoNegocio();
+	var evento = null;
+
+	if (req.query.id!=null && req.query.id.length) {
+		evento = en.obtener(req.query.id);
 	}
-	res.render('eventoDetalle', 
+
+  res.render('eventoDetalle', 
   			{evento:evento});
- 
 });
+
 
 module.exports = router;
