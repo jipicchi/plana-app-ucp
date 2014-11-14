@@ -4,7 +4,6 @@ var EventoNegocio=(function(){
 
         self.listado=function(){
           var lista=[];
-          var cn = null;
                  for (i=0;i<100;i++){
 		            
 		             var ent=new Evento("Evento N° " + i);
@@ -28,22 +27,11 @@ self.buscar = function(palabras){
     };
 
     return entidadesFiltradas;
-        
-        }   
+
+}   
 
 
-   var e=new evento();
-         e.setNombre('Evento '+id);
-         
-         for (j=1;j<5;j++){
-           Eventos=new ();
-           en.setNombre('Eventos '+j);
-           e.GetEventos().push(en);
-          };
-        return e;
-
-     return self;
+    return self;
 });
-
 
 module.exports=EventoNegocio;
