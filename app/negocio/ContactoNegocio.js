@@ -32,17 +32,7 @@ self.buscar = function(palabras){
 }   
 
 
-         var c=new contacto();
-         c.setNombre('Contacto '+id);
-         
-         for (j=1;j<5;j++){
-           Contactos=new ();
-           cn.setNombre('Contactos '+j);
-           c.GetContactos().push(cn);
-          };
-        return c;
-
-     return self;
+    return self;
 });
 
 

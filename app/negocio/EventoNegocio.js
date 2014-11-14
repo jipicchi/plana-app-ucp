@@ -32,13 +32,7 @@ self.buscar = function(palabras){
         }   
 
 
-     return self;
-});
-
-//metodo
-    self.obtener=function(id){
-            
-        var e=new evento();
+   var e=new evento();
          e.setNombre('Evento '+id);
          
          for (j=1;j<5;j++){
@@ -47,6 +41,9 @@ self.buscar = function(palabras){
            e.GetEventos().push(en);
           };
         return e;
+
+     return self;
+});
 
 
 module.exports=EventoNegocio;
