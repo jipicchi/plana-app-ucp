@@ -9,6 +9,7 @@ var LugarNegocio=(function(){
 		
 		             var ent=new Lugar("Lugar N° " + i);
                      //ent.setNombre("Evento N° "+ i);
+                     ent.setId(i);
 		             lista.push(ent);
                 }
                      return lista;
@@ -29,11 +30,32 @@ self.buscar = function(palabras){
 
     return entidadesFiltradas;
         
+}   
+
+
+
+self.obtener = function(id){
+    
+   
+    var lista = self.listado();
+    var l = null;
+    
+    for (var i = 0; i<lista.length; i++) {
+        l = lista[i];
+        if (l.getId() == id) {
+            return l;
+        };
+    };
+
+    return null;
+        
         }   
+
 
 
      return self;
 });
+
 
 
 

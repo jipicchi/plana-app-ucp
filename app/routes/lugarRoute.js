@@ -33,5 +33,17 @@ router.get('/buscar', function(req, res) {
   			 query:req.query.q});
 });
 
+router.get('/detalle', function(req, res) {
+	
+	var ln = new LugarNegocio();
+	var lugar = null;
+
+	if (req.query.id!=null && req.query.id.length) {
+		lugar = ln.obtener(req.query.id);
+	}
+
+  res.render('lugarDetalle', 
+  			{lugar:lugar});
+});
 
 module.exports = router;

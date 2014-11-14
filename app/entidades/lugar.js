@@ -19,6 +19,14 @@ var Lugar = (function(nombreInicial){
 		contactos=valor;
 	}
 	
+	var id;
+	self.getId=function (){
+		return id;
+	}
+    self.setId=function (valor){
+		id=valor;
+	}
+
 	self.setNombre(nombreInicial);
 
 	return self;
